@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,22 @@
 
   body {
     @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+
+  .section-padding {
+    @apply py-16 px-6 md:px-12 lg:px-24;
+  }
+  
+  .nvidia-gradient {
+    @apply bg-gradient-to-r from-nvidia-green to-nvidia-dark;
+  }
+  
+  .timeline-item {
+    @apply relative pl-8 pb-10 before:absolute before:left-0 before:top-0 before:h-full before:w-0.5 before:bg-nvidia-green last:pb-0;
+  }
+  
+  .timeline-dot {
+    @apply absolute -left-1.5 top-1.5 h-4 w-4 rounded-full bg-nvidia-green;
   }
 }
