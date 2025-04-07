@@ -20,6 +20,12 @@ const teamMembers = [
     role: "Team Member",
     bio: "Focused on data analysis and research methodology",
     image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&h=400&fit=crop"
+  },
+  {
+    name: "Yassin Dhibi",
+    role: "Team Member",
+    bio: "Specializing in strategic communications and brand positioning",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
   }
 ];
 
@@ -34,7 +40,7 @@ export default function TeamSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => (
             <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden relative">
