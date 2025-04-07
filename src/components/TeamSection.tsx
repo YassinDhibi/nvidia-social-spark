@@ -2,7 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const teamMembers = [
+export const teamMembers = [
   {
     name: "Seif Shell",
     role: "Team Member",

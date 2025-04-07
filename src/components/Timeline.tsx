@@ -1,39 +1,46 @@
 
 import { Check, TrendingUp, Award, Landmark, Globe, Zap } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const timelineEvents = [
   {
+    id: "2006",
     year: "2006",
     title: "Social Media Beginnings",
     description: "NVIDIA launches first social media accounts, focusing on tech enthusiasts and gamers.",
     icon: <Globe className="h-5 w-5 text-white" />,
   },
   {
+    id: "2012",
     year: "2012",
     title: "GeForce Community Growth",
     description: "Building dedicated gaming communities around GeForce products leads to explosive growth.",
     icon: <TrendingUp className="h-5 w-5 text-white" />,
   },
   {
+    id: "2016",
     year: "2016",
     title: "AI & Deep Learning Focus",
     description: "Pivoting content strategy to highlight AI innovations and research partnerships.",
     icon: <Zap className="h-5 w-5 text-white" />,
   },
   {
+    id: "2018",
     year: "2018",
     title: "RTX Launch Campaign",
     description: "Revolutionary cross-platform social campaign for RTX technology reaches millions.",
     icon: <Award className="h-5 w-5 text-white" />,
   },
   {
+    id: "2021",
     year: "2021",
     title: "Crypto & Gaming Boom",
     description: "Capitalizing on cryptocurrency and pandemic gaming surge through strategic content.",
     icon: <TrendingUp className="h-5 w-5 text-white" />,
   },
   {
+    id: "2023",
     year: "2023",
     title: "AI Revolution Leadership",
     description: "Dominating AI conversation across platforms positions NVIDIA as industry leader.",
@@ -42,6 +49,12 @@ const timelineEvents = [
 ];
 
 export default function Timeline() {
+  const navigate = useNavigate();
+  
+  const handleEventClick = (eventId: string) => {
+    navigate(`/presentation/${eventId}`);
+  };
+  
   return (
     <section id="timeline" className="section-padding bg-white">
       <div className="container">
@@ -60,7 +73,10 @@ export default function Timeline() {
                   {event.icon}
                 </div>
               </div>
-              <Card className="ml-4 overflow-hidden transition-all hover:shadow-lg">
+              <Card 
+                className="ml-4 overflow-hidden transition-all hover:shadow-lg cursor-pointer"
+                onClick={() => handleEventClick(event.id)}
+              >
                 <CardHeader className="bg-nvidia-dark text-white pb-2">
                   <CardTitle className="flex items-center">
                     <span className="mr-2 bg-nvidia-green text-white px-2 py-1 rounded text-sm">
