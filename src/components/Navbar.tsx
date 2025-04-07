@@ -1,19 +1,43 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import LanguageToggle from './LanguageToggle';
+import { useLanguage } from '@/hooks/useLanguage';
 
 const navItems = [
-  { name: "Introduction", href: "#introduction" },
-  { name: "Timeline", href: "#timeline" },
-  { name: "Case Studies", href: "#case-studies" },
-  { name: "Media", href: "#media" },
-  { name: "Team", href: "#team" },
+  { name: "Introduction", nameFr: "Introduction", href: "#introduction" },
+  { name: "Timeline", nameFr: "Chronologie", href: "#timeline" },
+  { name: "Case Studies", nameFr: "Études de Cas", href: "#case-studies" },
+  { name: "Media", nameFr: "Médias", href: "#media" },
+  { name: "Team", nameFr: "Équipe", href: "#team" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language } = useLanguage();
+  
+  // Handle hash navigation to ensure proper scrolling
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          // Add a small delay to ensure smooth scrolling
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
   
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
@@ -31,25 +55,28 @@ export default function Navbar() {
               href={item.href}
               className="text-sm font-medium transition-colors hover:text-nvidia-green"
             >
-              {item.name}
+              {language === 'en' ? item.name : item.nameFr}
             </a>
           ))}
+          <LanguageToggle />
         </nav>
         
         {/* Mobile Nav Toggle */}
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? (
-            <X className="h-5 w-5" />
-          ) : (
-            <Menu className="h-5 w-5" />
-          )}
-          <span className="sr-only">Toggle menu</span>
-        </Button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageToggle />
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </div>
       </div>
       
       {/* Mobile Nav */}
@@ -67,7 +94,7 @@ export default function Navbar() {
               className="text-sm font-medium transition-colors hover:text-nvidia-green"
               onClick={() => setIsMenuOpen(false)}
             >
-              {item.name}
+              {language === 'en' ? item.name : item.nameFr}
             </a>
           ))}
         </nav>
