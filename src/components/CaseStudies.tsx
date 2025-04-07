@@ -1,6 +1,6 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BarChart, Youtube, Instagram, Twitter, Facebook } from "lucide-react";
+import { BarChart, Youtube, Instagram, Twitter, Facebook, Check } from "lucide-react";
 
 const caseStudies = [
   {
