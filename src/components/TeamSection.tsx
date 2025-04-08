@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail, UserCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
@@ -91,7 +92,7 @@ export const teamMembers = [
     name: "Moadh Hannechi",
     role: "Team Member",
     bio: "Specializing in content creation and platform optimization",
-    image: "/lovable-uploads/7a6da5d0-a420-4fbb-9abf-1440e3f14603.png",
+    image: "/lovable-uploads/9c686184-db23-4e82-aadb-b8d23282fc04.png",
     detailedBio: `Moadh Hannechi is a content strategy specialist with particular expertise in platform-specific optimization techniques. With experience spanning both agency and in-house roles, Moadh brings a comprehensive understanding of how content strategies must adapt to different social media environments and audience expectations.
 
     For this research project, Moadh has focused on analyzing NVIDIA's content evolution across platforms, with particular attention to how the company has maintained brand consistency while optimizing for platform-specific features and audience behaviors. His comparative analysis of NVIDIA's approach versus competitors provides valuable insights into the company's content differentiation strategy.
@@ -141,7 +142,7 @@ export const teamMembers = [
     
     Yassin's examination of how NVIDIA has positioned its executives as thought leaders across social platforms offers an important perspective on personal branding as an extension of corporate communication strategy. His analysis of CEO Jensen Huang's evolving presence on LinkedIn and Twitter demonstrates how executive communication can amplify company messaging and build market credibility, particularly when navigating strategic pivots like NVIDIA's shift toward AI leadership.
     
-    Through comparative analysis of NVIDIA's crisis communication during challenging periods���such as cryptocurrency mining controversies and product shortages—Yassin has developed a framework for evaluating the effectiveness of different response strategies across social platforms. This work provides valuable guidelines for technology companies facing similar communication challenges in rapidly evolving markets.`,
+    Through comparative analysis of NVIDIA's crisis communication during challenging periods—such as cryptocurrency mining controversies and product shortages—Yassin has developed a framework for evaluating the effectiveness of different response strategies across social platforms. This work provides valuable guidelines for technology companies facing similar communication challenges in rapidly evolving markets.`,
     education: "Master's in Strategic Communications - Columbia University",
     expertise: [
       "Brand Positioning",
