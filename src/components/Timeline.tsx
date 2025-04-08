@@ -10,6 +10,7 @@ const timelineEvents = [
     title: "Facebook Marketing Beginnings",
     description: "Early adoption of Facebook for tech community engagement, focusing on dedicated pages for NVIDIA enthusiasts.",
     icon: <Facebook className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc" // How Facebook Marketing Works in 2022
   },
   {
     id: "2010",
@@ -17,6 +18,7 @@ const timelineEvents = [
     title: "YouTube Strategy Launch",
     description: "Creation of NVIDIA's YouTube channel with product demonstrations, tutorials, and technology deep-dives.",
     icon: <Youtube className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM" // YouTube Marketing Strategy
   },
   {
     id: "2014",
@@ -24,6 +26,7 @@ const timelineEvents = [
     title: "Twitter Engagement Growth",
     description: "Development of real-time customer support and announcement strategy through Twitter, building community interactions.",
     icon: <Twitter className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ" // Twitter for Business
   },
   {
     id: "2016",
@@ -31,6 +34,7 @@ const timelineEvents = [
     title: "Instagram Visual Storytelling",
     description: "Launch of Instagram account focusing on visual content showcasing products, technologies and behind-the-scenes.",
     icon: <Instagram className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo" // Instagram Marketing
   },
   {
     id: "2019",
@@ -38,6 +42,7 @@ const timelineEvents = [
     title: "LinkedIn B2B Strategy",
     description: "Professional platform engagement to position NVIDIA as an AI leader among business and enterprise audiences.",
     icon: <Linkedin className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4" // LinkedIn Business Strategy
   },
   {
     id: "2023",
@@ -45,6 +50,7 @@ const timelineEvents = [
     title: "Multi-Platform AI Integration",
     description: "Cross-platform strategy unifying NVIDIA's AI messaging across all social channels to dominate industry conversation.",
     icon: <TrendingUp className="h-5 w-5 text-white" />,
+    videoUrl: "https://www.youtube.com/embed/3hk37hj5tjs" // Multi-Platform Social Media Strategy
   },
 ];
 
@@ -58,7 +64,7 @@ export default function Timeline() {
   };
   
   return (
-    <section id="timeline" className="section-padding bg-white">
+    <section id="timeline" className="section-padding bg-white py-16">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">NVIDIA's Social Media Platform Evolution</h2>
@@ -67,30 +73,46 @@ export default function Timeline() {
           </p>
         </div>
 
-        <div className="relative mx-auto max-w-3xl mt-16">
+        <div className="relative mx-auto max-w-5xl mt-16">
           {timelineEvents.map((event, index) => (
-            <div key={index} className="timeline-item">
-              <div className="timeline-dot">
-                <div className="flex h-full w-full items-center justify-center rounded-full bg-nvidia-green">
-                  {event.icon}
+            <div key={index} className="mb-16">
+              <div className="timeline-item mb-4">
+                <div className="timeline-dot">
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-nvidia-green">
+                    {event.icon}
+                  </div>
+                </div>
+                <Card 
+                  className="ml-4 overflow-hidden transition-all hover:shadow-lg cursor-pointer"
+                  onClick={() => handleEventClick(event.id)}
+                >
+                  <CardHeader className="bg-nvidia-dark text-white pb-2">
+                    <CardTitle className="flex items-center">
+                      <span className="mr-2 bg-nvidia-green text-white px-2 py-1 rounded text-sm">
+                        {event.year}
+                      </span>
+                      {event.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <p>{event.description}</p>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              {/* Video section */}
+              <div className="ml-10 mt-4">
+                <h4 className="font-medium text-lg mb-2">Related Strategy Video:</h4>
+                <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+                  <iframe 
+                    className="w-full h-full"
+                    src={event.videoUrl}
+                    title={`${event.title} Video`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
-              <Card 
-                className="ml-4 overflow-hidden transition-all hover:shadow-lg cursor-pointer"
-                onClick={() => handleEventClick(event.id)}
-              >
-                <CardHeader className="bg-nvidia-dark text-white pb-2">
-                  <CardTitle className="flex items-center">
-                    <span className="mr-2 bg-nvidia-green text-white px-2 py-1 rounded text-sm">
-                      {event.year}
-                    </span>
-                    {event.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <p>{event.description}</p>
-                </CardContent>
-              </Card>
             </div>
           ))}
         </div>

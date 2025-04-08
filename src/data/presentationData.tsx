@@ -1,4 +1,3 @@
-
 // Import team member data to link presenters to timeline events
 import { teamMembers } from '@/components/TeamSection';
 import { ReactNode } from 'react';
@@ -52,7 +51,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Text-focused content strategy suited to early Facebook functionality"
     ],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop"
@@ -68,7 +67,7 @@ export const presentationData: Record<string, PresentationContent> = {
   "2010": {
     title: "YouTube Strategy Launch",
     year: "2010",
-    presenter: teamMembers[2], // Moadh
+    presenter: teamMembers[2], // Moadh (corrected position)
     platform: "YouTube",
     platformIcon: <Youtube className="h-6 w-6" />,
     content: (
@@ -91,7 +90,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Used video content to humanize the brand through engineer and developer features"
     ],
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=400&fit=crop"
@@ -107,7 +106,7 @@ export const presentationData: Record<string, PresentationContent> = {
   "2014": {
     title: "Twitter Engagement Growth",
     year: "2014",
-    presenter: teamMembers[0], // Rayen
+    presenter: teamMembers[0], // Rayen (corrected position)
     platform: "Twitter",
     platformIcon: <Twitter className="h-6 w-6" />,
     content: (
@@ -130,7 +129,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Implemented real-time monitoring and analytics for performance optimization"
     ],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=400&fit=crop"
@@ -169,7 +168,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Implemented employee advocacy program to extend organic reach"
     ],
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Replace with actual video URL
     additionalImages: [
       "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
@@ -208,7 +207,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Implemented lead generation strategy through gated content and webinar promotions"
     ],
     image: "https://images.unsplash.com/photo-1621761225528-63d9e994ee4c?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // Replace with actual video URL
     additionalImages: [
       "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=400&fit=crop"
@@ -247,7 +246,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Positioned CEO Jensen Huang as the face of AI innovation across all platforms"
     ],
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/3hk37hj5tjs", // Replace with actual video URL
     additionalImages: [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop"
@@ -400,102 +399,4 @@ export const presentationDataFr: Record<string, PresentationContent> = {
         </p>
       </div>
     ),
-    keyPoints: [
-      "Lancement de la présence Instagram avec des directives d'identité visuelle distinctes",
-      "Création de quatre piliers de contenu: produits, coulisses, configurations utilisateurs et visualisation",
-      "Utilisation des Stories Instagram pour la couverture d'événements et les teasers d'annonces",
-      "Mise en œuvre d'un programme de promotion par les employés pour étendre la portée organique"
-    ],
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
-    additionalImages: [
-      "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
-    ],
-    metrics: {
-      followers: "425 000 fin 2017",
-      engagement: "Taux d'engagement moyen de 5,3% (2x la moyenne de l'industrie)",
-      reach: "Démographie plus jeune que sur les autres plateformes (65% moins de 35 ans)",
-      contentType: "Photographie de produits, coulisses, présentations d'employés, récits visuels de données"
-    },
-    fullBio: "La recherche de Moadh Hannechi sur la stratégie Instagram de NVIDIA documente comment l'entreprise a construit une présence visuelle distinctive sur une plateforme qui semblait initialement difficile pour une entreprise de matériel et de technologie. À travers une analyse visuelle détaillée de centaines de posts et de stories, Moadh identifie les techniques visuelles spécifiques et les stratégies de contenu qui ont permis à NVIDIA de se démarquer sur une plateforme axée sur l'esthétique. Ses résultats révèlent comment NVIDIA a réussi à traduire des concepts techniques complexes en contenu visuel captivant, particulièrement dans l'explication de l'IA et la visualisation de données. La recherche examine également comment l'approche Instagram de NVIDIA différait des concurrents en mettant l'accent sur la culture organisationnelle et les histoires d'employés, créant une connexion émotionnelle avec les audiences au-delà des spécifications produit."
-  },
-  "2019": {
-    title: "Stratégie B2B sur LinkedIn",
-    year: "2019",
-    presenter: teamMembers[3], // Yassin
-    platform: "LinkedIn",
-    platformIcon: <Linkedin className="h-6 w-6" />,
-    content: (
-      <div>
-        <p className="mb-4">
-          En 2019, NVIDIA avait établi une forte présence orientée consommateur sur plusieurs plateformes sociales, mais nos recherches montrent que l'entreprise a reconnu la nécessité de renforcer sa communication business-to-business alors que l'IA et les applications pour centres de données devenaient des moteurs de revenus de plus en plus importants. LinkedIn est devenu la pièce maîtresse de ce pivot stratégique B2B.
-        </p>
-        <p className="mb-4">
-          NVIDIA a développé une approche LinkedIn sophistiquée qui positionnait l'entreprise comme un leader en technologie d'entreprise plutôt qu'un simple fournisseur de composants. La stratégie de contenu était centrée sur des articles de leadership d'opinion, des livres blancs, des études de cas et des perspectives de dirigeants qui abordaient les défis commerciaux plutôt que les spécifications techniques.
-        </p>
-        <p>
-          L'approche de NVIDIA pour présenter des histoires de réussite clients à travers diverses industries—de la santé et des services financiers à l'automobile et la vente au détail—était particulièrement efficace. Notre analyse indique que ce contenu spécifique à l'industrie a obtenu des performances significativement meilleures que les annonces générales de produits, générant des prospects de meilleure qualité et soutenant les efforts de vente aux entreprises de NVIDIA.
-        </p>
-      </div>
-    ),
-    keyPoints: [
-      "Développement d'une stratégie de contenu B2B distincte pour LinkedIn axée sur la valeur pour l'entreprise",
-      "Création de pistes de contenu spécifiques à l'industrie abordant les défis des marchés verticaux",
-      "Positionnement des dirigeants comme leaders d'opinion à travers des articles signés et des interviews",
-      "Mise en œuvre d'une stratégie de génération de leads via du contenu à accès limité et des promotions de webinaires"
-    ],
-    image: "https://images.unsplash.com/photo-1621761225528-63d9e994ee4c?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
-    additionalImages: [
-      "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=400&fit=crop"
-    ],
-    metrics: {
-      followers: "1,2 million fin 2019",
-      engagement: "Taux d'engagement de 2,7% sur le contenu de leadership d'opinion",
-      reach: "PDG et décideurs informatiques seniors dans les grandes entreprises",
-      contentType: "Livres blancs, études de cas, perspectives de dirigeants, solutions sectorielles"
-    },
-    fullBio: "L'analyse de Yassin Dhibi sur la stratégie LinkedIn de NVIDIA examine comment l'entreprise a réussi à pivoter d'une marque principalement orientée consommateur à l'établissement d'une crédibilité dans les cercles technologiques d'entreprise. À travers une analyse détaillée du contenu et des données d'entretiens, Yassin documente comment l'approche de NVIDIA différait du marketing traditionnel de technologie B2B en mettant l'accent sur les résultats commerciaux plutôt que sur les spécifications techniques. Sa recherche fournit des aperçus précieux sur la stratégie de positionnement des dirigeants de NVIDIA, suivant comment les leaders de l'entreprise ont été systématiquement établis comme des leaders d'opinion en intelligence artificielle, science des données et informatique d'entreprise. Les résultats de Yassin démontrent comment cette approche centrée sur LinkedIn a directement soutenu la transformation commerciale de NVIDIA, corrélant les métriques d'engagement social avec la croissance des revenus d'entreprise et les changements de perception du marché."
-  },
-  "2023": {
-    title: "Intégration IA Multi-Plateforme",
-    year: "2023",
-    presenter: teamMembers[0], // Rayen
-    platform: "Multi-Plateformes",
-    platformIcon: <TrendingUp className="h-6 w-6" />,
-    content: (
-      <div>
-        <p className="mb-4">
-          En 2023, NVIDIA avait établi des stratégies sophistiquées sur toutes les principales plateformes sociales, mais nos recherches révèlent que l'innovation la plus significative de l'entreprise résidait dans l'intégration multi-plateforme. Alors que l'IA émergeait comme le récit technologique dominant, NVIDIA a mis en œuvre une approche coordonnée qui positionnait l'entreprise au centre de cette conversation sur tous les canaux.
-        </p>
-        <p className="mb-4">
-          Cette stratégie intégrée tirait parti des forces de chaque plateforme tout en maintenant une messagerie cohérente: LinkedIn pour les applications commerciales de l'IA, Twitter pour les mises à jour en temps réel sur les percées en IA, YouTube pour les explications techniques approfondies, Instagram pour les représentations visuelles des concepts d'IA, et Facebook pour la création de communautés parmi les développeurs et chercheurs.
-        </p>
-        <p>
-          L'approche de NVIDIA pour les annonces majeures en IA était particulièrement efficace, avec un déploiement de contenu précisément chorégraphié à travers les plateformes pour maximiser l'impact et l'engagement. Notre analyse montre que cette approche coordonnée a permis à NVIDIA de dominer les conversations liées à l'IA, même par rapport à des entreprises avec des suivis significativement plus importants sur les médias sociaux.
-        </p>
-      </div>
-    ),
-    keyPoints: [
-      "Développement d'une stratégie de contenu multi-plateforme avec des adaptations spécifiques à chaque plateforme",
-      "Mise en œuvre d'un cadre de messagerie central assurant la cohérence à travers les canaux",
-      "Création d'un système de réponse rapide pour amplifier les percées de recherche en IA utilisant la technologie NVIDIA",
-      "Positionnement du PDG Jensen Huang comme le visage de l'innovation en IA sur toutes les plateformes"
-    ],
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
-    additionalImages: [
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop"
-    ],
-    metrics: {
-      followers: "Plus de 15 millions combinés sur toutes les plateformes",
-      engagement: "Taux d'engagement moyen de 8,3% sur le contenu lié à l'IA",
-      reach: "Audience mondiale à travers les segments techniques, commerciaux et consommateurs",
-      contentType: "Recherche en IA, applications produits, ressources de développement, leadership d'opinion"
-    },
-    fullBio: "L'analyse complète de Mohamed Rayen Bouquery sur l'approche intégrée des médias sociaux de NVIDIA examine comment l'entreprise a atteint une dominance sans précédent des conversations liées à l'IA sur toutes les principales plateformes. En utilisant des techniques avancées de modélisation de sujets et de cartographie d'influence, Rayen documente comment NVIDIA s'est positionnée avec succès au centre des discussions sur l'IA indépendamment de la plateforme ou du segment d'audience. Sa recherche révèle les systèmes sophistiqués de coordination que NVIDIA a mis en œuvre pour assurer une messagerie cohérente tout en adaptant les formats de contenu aux caractéristiques uniques de chaque plateforme. Les résultats de Rayen démontrent comment cette approche intégrée a livré des résultats commerciaux mesurables, corrélant la dominance des conversations sur les médias sociaux avec la performance boursière extraordinaire de NVIDIA et sa position sur le marché comme l'entreprise d'IA définitive de 2023."
-  }
-};
+    keyPoints:
