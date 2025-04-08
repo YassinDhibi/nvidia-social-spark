@@ -2,6 +2,7 @@
 import { Facebook, Instagram, Youtube, Twitter, Linkedin, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const timelineEvents = [
   {
@@ -10,7 +11,7 @@ const timelineEvents = [
     title: "Facebook Marketing Beginnings",
     description: "Early adoption of Facebook for tech community engagement, focusing on dedicated pages for NVIDIA enthusiasts.",
     icon: <Facebook className="h-5 w-5 text-white" />,
-    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc" // How Facebook Marketing Works in 2022
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc" // Facebook Marketing Strategy
   },
   {
     id: "2010",
@@ -56,15 +57,48 @@ const timelineEvents = [
 
 export default function Timeline() {
   const navigate = useNavigate();
+  const timelineRef = useRef<HTMLDivElement>(null);
   
   const handleEventClick = (eventId: string) => {
     navigate(`/presentation/${eventId}`);
     // Scroll to top when navigating
     window.scrollTo(0, 0);
   };
+
+  // Use intersection observer to add animation when timeline items come into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('timeline-item-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2,
+      }
+    );
+
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach((item) => {
+      observer.observe(item);
+    });
+
+    return () => {
+      if (timelineItems) {
+        timelineItems.forEach((item) => {
+          observer.unobserve(item);
+        });
+      }
+    };
+  }, []);
   
   return (
-    <section id="timeline" className="section-padding bg-white py-16">
+    <section id="timeline" className="section-padding bg-white py-16" ref={timelineRef}>
       <div className="container">
         <div className="mx-auto max-w-3xl text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">NVIDIA's Social Media Platform Evolution</h2>
@@ -75,30 +109,28 @@ export default function Timeline() {
 
         <div className="relative mx-auto max-w-5xl mt-16">
           {timelineEvents.map((event, index) => (
-            <div key={index} className="mb-16">
-              <div className="timeline-item mb-4">
-                <div className="timeline-dot">
-                  <div className="flex h-full w-full items-center justify-center rounded-full bg-nvidia-green">
-                    {event.icon}
-                  </div>
+            <div key={index} className="mb-16 opacity-0 transform translate-y-4 transition-all duration-700 timeline-item">
+              <div className="timeline-dot">
+                <div className="flex h-full w-full items-center justify-center rounded-full bg-nvidia-green">
+                  {event.icon}
                 </div>
-                <Card 
-                  className="ml-4 overflow-hidden transition-all hover:shadow-lg cursor-pointer"
-                  onClick={() => handleEventClick(event.id)}
-                >
-                  <CardHeader className="bg-nvidia-dark text-white pb-2">
-                    <CardTitle className="flex items-center">
-                      <span className="mr-2 bg-nvidia-green text-white px-2 py-1 rounded text-sm">
-                        {event.year}
-                      </span>
-                      {event.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-4">
-                    <p>{event.description}</p>
-                  </CardContent>
-                </Card>
               </div>
+              <Card 
+                className="ml-4 overflow-hidden transition-all hover:shadow-lg cursor-pointer"
+                onClick={() => handleEventClick(event.id)}
+              >
+                <CardHeader className="bg-nvidia-dark text-white pb-2">
+                  <CardTitle className="flex items-center">
+                    <span className="mr-2 bg-nvidia-green text-white px-2 py-1 rounded text-sm">
+                      {event.year}
+                    </span>
+                    {event.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-4">
+                  <p>{event.description}</p>
+                </CardContent>
+              </Card>
               
               {/* Video section */}
               <div className="ml-10 mt-4">

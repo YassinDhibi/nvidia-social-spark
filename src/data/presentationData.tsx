@@ -289,7 +289,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Stratégie de contenu axée sur le texte adaptée aux premières fonctionnalités de Facebook"
     ],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop"
@@ -328,7 +328,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Utilisation du contenu vidéo pour humaniser la marque à travers des présentations d'ingénieurs et développeurs"
     ],
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=400&fit=crop"
@@ -367,7 +367,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Mise en œuvre de surveillance et d'analyses en temps réel pour l'optimisation des performances"
     ],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Updated to meaningful video
     additionalImages: [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=400&fit=crop"
@@ -399,4 +399,5 @@ export const presentationDataFr: Record<string, PresentationContent> = {
         </p>
       </div>
     ),
-    keyPoints:
+    keyPoints: [
+      "
