@@ -161,10 +161,10 @@ export const presentationData: Record<string, PresentationContent> = {
       </div>
     ),
     keyPoints: [
-      "Launched Instagram presence with distinct visual identity guidelines",
-      "Created four content pillars: products, behind-the-scenes, user setups, and visualization",
-      "Leveraged Instagram Stories for event coverage and announcement teasers",
-      "Implemented employee advocacy program to extend organic reach"
+      "Lancement d'une présence Instagram avec des directives d'identité visuelle distinctes",
+      "Création de quatre piliers de contenu: produits, coulisses, configurations utilisateurs et visualisation",
+      "Utilisation des Stories Instagram pour la couverture d'événements et les teasers d'annonces",
+      "Mise en œuvre d'un programme de promotion par les employés pour étendre la portée organique"
     ],
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
     videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Instagram Marketing
@@ -173,12 +173,12 @@ export const presentationData: Record<string, PresentationContent> = {
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
     ],
     metrics: {
-      followers: "425,000 by end of 2017",
-      engagement: "5.3% average engagement rate (2x industry average)",
-      reach: "Younger demographic than other platforms (65% under 35)",
-      contentType: "Product photography, behind-the-scenes, employee features, visual data stories"
+      followers: "425 000 à la fin de 2017",
+      engagement: "Taux d'engagement moyen de 5,3% (2x la moyenne de l'industrie)",
+      reach: "Démographie plus jeune que sur les autres plateformes (65% moins de 35 ans)",
+      contentType: "Photographie de produits, coulisses, présentations d'employés, histoires visuelles de données"
     },
-    fullBio: "Moadh Hannechi's research on NVIDIA's Instagram strategy documents how the company built a distinctive visual presence on a platform that initially seemed challenging for a hardware and technology company. Through detailed visual analysis of hundreds of posts and stories, Moadh identifies the specific visual techniques and content strategies that enabled NVIDIA to stand out in an aesthetics-driven platform. His findings reveal how NVIDIA successfully translated complex technical concepts into compelling visual content, particularly in explaining AI and data visualization. The research also examines how NVIDIA's Instagram approach differed from competitors by emphasizing organizational culture and employee stories, creating an emotional connection with audiences beyond product specifications."
+    fullBio: "La recherche de Moadh Hannechi sur la stratégie Instagram de NVIDIA documente comment l'entreprise a construit une présence visuelle distinctive sur une plateforme qui semblait initialement difficile pour une entreprise de matériel et de technologie. Par une analyse visuelle détaillée de centaines de publications et d'histoires, Moadh identifie les techniques visuelles spécifiques et les stratégies de contenu qui ont permis à NVIDIA de se démarquer dans une plateforme axée sur l'esthétique. Ses découvertes révèlent comment NVIDIA a réussi à traduire des concepts techniques complexes en contenu visuel attrayant, notamment dans l'explication de l'IA et la visualisation de données. La recherche examine également comment l'approche Instagram de NVIDIA différait des concurrents en mettant l'accent sur la culture organisationnelle et les histoires d'employés, créant une connexion émotionnelle avec les publics au-delà des spécifications de produits."
   },
   "2019": {
     title: "LinkedIn B2B Strategy",
@@ -200,10 +200,10 @@ export const presentationData: Record<string, PresentationContent> = {
       </div>
     ),
     keyPoints: [
-      "Developed distinct B2B content strategy for LinkedIn focused on enterprise value",
-      "Created industry-specific content tracks addressing vertical market challenges",
-      "Positioned executives as thought leaders through bylined articles and interviews",
-      "Implemented lead generation strategy through gated content and webinar promotions"
+      "Développement d'une stratégie de contenu B2B distincte pour LinkedIn focused sur la valeur d'entreprise",
+      "Création de pistes de contenu spécifiques à l'industrie abordant les défis du marché vertical",
+      "Positionnement des dirigeants comme leaders d'opinion à travers des articles signés et des interviews",
+      "Mise en œuvre d'une stratégie de génération de leads à travers du contenu protégé et des promotions de webinaires"
     ],
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
     videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // LinkedIn Business Strategy
@@ -399,10 +399,10 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       </div>
     ),
     keyPoints: [
-      "Launched Instagram presence with distinct visual identity guidelines",
-      "Created four content pillars: products, behind-the-scenes, user setups, and visualization",
-      "Leveraged Instagram Stories for event coverage and announcement teasers",
-      "Implemented employee advocacy program to extend organic reach"
+      "Lancement d'une présence Instagram avec des directives d'identité visuelle distinctes",
+      "Création de quatre piliers de contenu: produits, coulisses, configurations utilisateurs et visualisation",
+      "Utilisation des Stories Instagram pour la couverture d'événements et les teasers d'annonces",
+      "Mise en œuvre d'un programme de promotion par les employés pour étendre la portée organique"
     ],
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
     videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Instagram Marketing
@@ -411,12 +411,12 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
     ],
     metrics: {
-      followers: "425,000 by end of 2017",
-      engagement: "5.3% average engagement rate (2x industry average)",
-      reach: "Younger demographic than other platforms (65% under 35)",
-      contentType: "Product photography, behind-the-scenes, employee features, visual data stories"
+      followers: "425 000 à la fin de 2017",
+      engagement: "Taux d'engagement moyen de 5,3% (2x la moyenne de l'industrie)",
+      reach: "Démographie plus jeune que sur les autres plateformes (65% moins de 35 ans)",
+      contentType: "Photographie de produits, coulisses, présentations d'employés, histoires visuelles de données"
     },
-    fullBio: "Moadh Hannechi's research on NVIDIA's Instagram strategy documents how the company built a distinctive visual presence on a platform that initially seemed challenging for a hardware and technology company. Through detailed visual analysis of hundreds of posts and stories, Moadh identifies the specific visual techniques and content strategies that enabled NVIDIA to stand out in an aesthetics-driven platform. His findings reveal how NVIDIA successfully translated complex technical concepts into compelling visual content, particularly in explaining AI and data visualization. The research also examines how NVIDIA's Instagram approach differed from competitors by emphasizing organizational culture and employee stories, creating an emotional connection with audiences beyond product specifications."
+    fullBio: "La recherche de Moadh Hannechi sur la stratégie Instagram de NVIDIA documente comment l'entreprise a construit une présence visuelle distinctive sur une plateforme qui semblait initialement difficile pour une entreprise de matériel et de technologie. Par une analyse visuelle détaillée de centaines de publications et d'histoires, Moadh identifie les techniques visuelles spécifiques et les stratégies de contenu qui ont permis à NVIDIA de se démarquer dans une plateforme axée sur l'esthétique. Ses découvertes révèlent comment NVIDIA a réussi à traduire des concepts techniques complexes en contenu visuel attrayant, notamment dans l'explication de l'IA et la visualisation de données. La recherche examine également comment l'approche Instagram de NVIDIA différait des concurrents en mettant l'accent sur la culture organisationnelle et les histoires d'employés, créant une connexion émotionnelle avec les publics au-delà des spécifications de produits."
   },
   "2019": {
     title: "Stratégie B2B sur LinkedIn",
