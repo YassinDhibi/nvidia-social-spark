@@ -205,7 +205,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Positioned executives as thought leaders through bylined articles and interviews",
       "Implemented lead generation strategy through gated content and webinar promotions"
     ],
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop", // Updated with working image
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
     videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // LinkedIn Business Strategy
     additionalImages: [
       "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=400&fit=crop",
@@ -398,3 +398,102 @@ export const presentationDataFr: Record<string, PresentationContent> = {
         </p>
       </div>
     ),
+    keyPoints: [
+      "Launched Instagram presence with distinct visual identity guidelines",
+      "Created four content pillars: products, behind-the-scenes, user setups, and visualization",
+      "Leveraged Instagram Stories for event coverage and announcement teasers",
+      "Implemented employee advocacy program to extend organic reach"
+    ],
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
+    videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Instagram Marketing
+    additionalImages: [
+      "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
+    ],
+    metrics: {
+      followers: "425,000 by end of 2017",
+      engagement: "5.3% average engagement rate (2x industry average)",
+      reach: "Younger demographic than other platforms (65% under 35)",
+      contentType: "Product photography, behind-the-scenes, employee features, visual data stories"
+    },
+    fullBio: "Moadh Hannechi's research on NVIDIA's Instagram strategy documents how the company built a distinctive visual presence on a platform that initially seemed challenging for a hardware and technology company. Through detailed visual analysis of hundreds of posts and stories, Moadh identifies the specific visual techniques and content strategies that enabled NVIDIA to stand out in an aesthetics-driven platform. His findings reveal how NVIDIA successfully translated complex technical concepts into compelling visual content, particularly in explaining AI and data visualization. The research also examines how NVIDIA's Instagram approach differed from competitors by emphasizing organizational culture and employee stories, creating an emotional connection with audiences beyond product specifications."
+  },
+  "2019": {
+    title: "Stratégie B2B sur LinkedIn",
+    year: "2019",
+    presenter: teamMembers[3], // Yassin
+    platform: "LinkedIn",
+    platformIcon: <Linkedin className="h-6 w-6" />,
+    content: (
+      <div>
+        <p className="mb-4">
+          En 2019, NVIDIA avait établi une forte présence orientée consommateur sur plusieurs plateformes sociales, mais nos recherches montrent que l'entreprise a reconnu le besoin de renforcer sa communication business-to-business alors que l'IA et les applications de centres de données devenaient des moteurs de revenus de plus en plus importants. LinkedIn est devenu la pièce maîtresse de ce pivot stratégique B2B.
+        </p>
+        <p className="mb-4">
+          NVIDIA a développé une approche LinkedIn sophistiquée qui positionnait l'entreprise comme un leader technologique d'entreprise plutôt que comme un simple fournisseur de composants. La stratégie de contenu était centrée sur des articles de leadership de pensée, des livres blancs, des études de cas et des perspectives de dirigeants qui abordaient les défis commerciaux plutôt que les spécifications techniques.
+        </p>
+        <p>
+          L'approche de NVIDIA pour présenter des histoires de réussite clients dans diverses industries—de la santé et des services financiers à l'automobile et au commerce de détail—était particulièrement efficace. Notre analyse indique que ce contenu spécifique à l'industrie a obtenu des performances significativement meilleures que les annonces générales de produits, générant des prospects de meilleure qualité et soutenant les efforts de vente d'entreprise de NVIDIA.
+        </p>
+      </div>
+    ),
+    keyPoints: [
+      "Développement d'une stratégie de contenu B2B distincte pour LinkedIn axée sur la valeur d'entreprise",
+      "Création de pistes de contenu spécifiques à l'industrie abordant les défis du marché vertical",
+      "Positionnement des dirigeants comme leaders d'opinion à travers des articles signés et des interviews",
+      "Mise en œuvre d'une stratégie de génération de leads à travers du contenu protégé et des promotions de webinaires"
+    ],
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
+    videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // LinkedIn Business Strategy
+    additionalImages: [
+      "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=400&fit=crop"
+    ],
+    metrics: {
+      followers: "1,2 million fin 2019",
+      engagement: "Taux d'engagement de 2,7% sur le contenu de leadership d'opinion",
+      reach: "PDG et décideurs informatiques seniors dans les entreprises",
+      contentType: "Livres blancs, études de cas, perspectives de dirigeants, solutions industrielles"
+    },
+    fullBio: "L'analyse de Yassin Dhibi sur la stratégie LinkedIn de NVIDIA examine comment l'entreprise a réussi à passer d'une marque principalement orientée consommateur à l'établissement d'une crédibilité dans les cercles de technologie d'entreprise. Grâce à une analyse détaillée du contenu et des données d'entretien, Yassin documente comment l'approche de NVIDIA différait du marketing technologique B2B traditionnel en mettant l'accent sur les résultats commerciaux plutôt que sur les spécifications techniques. Sa recherche fournit des informations précieuses sur la stratégie de positionnement des dirigeants de NVIDIA, suivant comment les leaders de l'entreprise ont été systématiquement établis comme des leaders d'opinion en intelligence artificielle, science des données et informatique d'entreprise. Les découvertes de Yassin démontrent comment cette approche centrée sur LinkedIn a directement soutenu la transformation commerciale de NVIDIA, en corrélant les métriques d'engagement social avec la croissance des revenus d'entreprise et les changements de perception du marché."
+  },
+  "2023": {
+    title: "Intégration IA Multi-Plateforme",
+    year: "2023",
+    presenter: teamMembers[0], // Rayen
+    platform: "Multi-Plateforme",
+    platformIcon: <TrendingUp className="h-6 w-6" />,
+    content: (
+      <div>
+        <p className="mb-4">
+          En 2023, NVIDIA avait établi des stratégies sophistiquées sur toutes les principales plateformes sociales, mais nos recherches révèlent que l'innovation la plus significative de l'entreprise était dans l'intégration entre plateformes. Alors que l'IA émergeait comme le récit technologique dominant, NVIDIA a mis en œuvre une approche coordonnée qui a positionné l'entreprise au centre de cette conversation sur tous les canaux.
+        </p>
+        <p className="mb-4">
+          Cette stratégie intégrée tirait parti des forces de chaque plateforme tout en maintenant une messagerie cohérente: LinkedIn pour les applications commerciales de l'IA, Twitter pour les mises à jour en temps réel sur les percées en IA, YouTube pour des explications techniques approfondies, Instagram pour les représentations visuelles des concepts d'IA, et Facebook pour la construction communautaire parmi les développeurs et chercheurs.
+        </p>
+        <p>
+          L'approche de NVIDIA pour les annonces majeures d'IA, avec un déploiement de contenu précisément chorégraphié sur les plateformes pour maximiser l'impact et l'engagement, était particulièrement efficace. Notre analyse montre que cette approche coordonnée a permis à NVIDIA de dominer les conversations liées à l'IA même par rapport à des entreprises avec des suivis de médias sociaux globalement beaucoup plus importants.
+        </p>
+      </div>
+    ),
+    keyPoints: [
+      "Développement d'une stratégie de contenu multi-plateforme avec des adaptations spécifiques à chaque plateforme",
+      "Mise en œuvre d'un cadre de messagerie central assurant la cohérence entre les canaux",
+      "Création d'un système de réponse rapide pour amplifier les percées de recherche en IA utilisant la technologie NVIDIA",
+      "Positionnement du PDG Jensen Huang comme le visage de l'innovation en IA sur toutes les plateformes"
+    ],
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop",
+    videoUrl: "https://www.youtube.com/embed/3hk37hj5tjs", // Multi-Platform Social Media Strategy
+    additionalImages: [
+      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop"
+    ],
+    metrics: {
+      followers: "Plus de 15 millions combinés sur toutes les plateformes",
+      engagement: "Engagement moyen de 8,3% sur le contenu lié à l'IA",
+      reach: "Audience mondiale à travers les segments techniques, commerciaux et consommateurs",
+      contentType: "Recherche en IA, applications de produits, ressources de développement, leadership de pensée"
+    },
+    fullBio: "L'analyse complète de Mohamed Rayen Bouquery sur l'approche intégrée des médias sociaux de NVIDIA examine comment l'entreprise a atteint une domination sans précédent des conversations liées à l'IA sur toutes les principales plateformes. En utilisant des techniques avancées de modélisation de sujets et de cartographie d'influence, Rayen documente comment NVIDIA s'est positionnée avec succès au centre des discussions sur l'IA indépendamment de la plateforme ou du segment d'audience. Sa recherche révèle les systèmes de coordination sophistiqués que NVIDIA a mis en œuvre pour assurer une messagerie cohérente tout en adaptant les formats de contenu aux caractéristiques uniques de chaque plateforme. Les découvertes de Rayen démontrent comment cette approche intégrée a livré des résultats commerciaux mesurables, corrélant la domination des conversations sur les médias sociaux avec la performance boursière extraordinaire de NVIDIA et sa position sur le marché comme l'entreprise d'IA par excellence de 2023."
+  }
+};
