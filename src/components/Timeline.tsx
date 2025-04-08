@@ -1,5 +1,5 @@
 
-import { Check, TrendingUp, Award, Landmark, Globe, Zap } from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter, Linkedin, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 
@@ -7,44 +7,44 @@ const timelineEvents = [
   {
     id: "2006",
     year: "2006",
-    title: "Social Media Beginnings",
-    description: "NVIDIA launches first social media accounts, focusing on tech enthusiasts and gamers.",
-    icon: <Globe className="h-5 w-5 text-white" />,
+    title: "Facebook Marketing Beginnings",
+    description: "Early adoption of Facebook for tech community engagement, focusing on dedicated pages for NVIDIA enthusiasts.",
+    icon: <Facebook className="h-5 w-5 text-white" />,
   },
   {
-    id: "2012",
-    year: "2012",
-    title: "GeForce Community Growth",
-    description: "Building dedicated gaming communities around GeForce products leads to explosive growth.",
-    icon: <TrendingUp className="h-5 w-5 text-white" />,
+    id: "2010",
+    year: "2010",
+    title: "YouTube Strategy Launch",
+    description: "Creation of NVIDIA's YouTube channel with product demonstrations, tutorials, and technology deep-dives.",
+    icon: <Youtube className="h-5 w-5 text-white" />,
+  },
+  {
+    id: "2014",
+    year: "2014",
+    title: "Twitter Engagement Growth",
+    description: "Development of real-time customer support and announcement strategy through Twitter, building community interactions.",
+    icon: <Twitter className="h-5 w-5 text-white" />,
   },
   {
     id: "2016",
     year: "2016",
-    title: "AI & Deep Learning Focus",
-    description: "Pivoting content strategy to highlight AI innovations and research partnerships.",
-    icon: <Zap className="h-5 w-5 text-white" />,
+    title: "Instagram Visual Storytelling",
+    description: "Launch of Instagram account focusing on visual content showcasing products, technologies and behind-the-scenes.",
+    icon: <Instagram className="h-5 w-5 text-white" />,
   },
   {
-    id: "2018",
-    year: "2018",
-    title: "RTX Launch Campaign",
-    description: "Revolutionary cross-platform social campaign for RTX technology reaches millions.",
-    icon: <Award className="h-5 w-5 text-white" />,
-  },
-  {
-    id: "2021",
-    year: "2021",
-    title: "Crypto & Gaming Boom",
-    description: "Capitalizing on cryptocurrency and pandemic gaming surge through strategic content.",
-    icon: <TrendingUp className="h-5 w-5 text-white" />,
+    id: "2019",
+    year: "2019",
+    title: "LinkedIn B2B Strategy",
+    description: "Professional platform engagement to position NVIDIA as an AI leader among business and enterprise audiences.",
+    icon: <Linkedin className="h-5 w-5 text-white" />,
   },
   {
     id: "2023",
     year: "2023",
-    title: "AI Revolution Leadership",
-    description: "Dominating AI conversation across platforms positions NVIDIA as industry leader.",
-    icon: <Landmark className="h-5 w-5 text-white" />,
+    title: "Multi-Platform AI Integration",
+    description: "Cross-platform strategy unifying NVIDIA's AI messaging across all social channels to dominate industry conversation.",
+    icon: <TrendingUp className="h-5 w-5 text-white" />,
   },
 ];
 
@@ -53,15 +53,17 @@ export default function Timeline() {
   
   const handleEventClick = (eventId: string) => {
     navigate(`/presentation/${eventId}`);
+    // Scroll to top when navigating
+    window.scrollTo(0, 0);
   };
   
   return (
     <section id="timeline" className="section-padding bg-white">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">NVIDIA's Social Media Evolution</h2>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">NVIDIA's Social Media Platform Evolution</h2>
           <p className="text-lg text-muted-foreground">
-            From gaming-focused beginnings to AI dominance, see how NVIDIA transformed its social presence over time.
+            From early Facebook adoption to integrated multi-platform dominance, see how NVIDIA leveraged each social media channel to transform their market presence.
           </p>
         </div>
 
