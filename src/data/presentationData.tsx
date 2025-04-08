@@ -400,4 +400,3 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       </div>
     ),
     keyPoints: [
-      "
