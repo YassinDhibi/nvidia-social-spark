@@ -1,4 +1,3 @@
-// Import team member data to link presenters to timeline events
 import { teamMembers } from '@/components/TeamSection';
 import { ReactNode } from 'react';
 import { Facebook, Instagram, Youtube, Twitter, Linkedin, TrendingUp } from "lucide-react";
@@ -51,7 +50,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Text-focused content strategy suited to early Facebook functionality"
     ],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Facebook Marketing Strategy
     additionalImages: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop"
@@ -67,7 +66,7 @@ export const presentationData: Record<string, PresentationContent> = {
   "2010": {
     title: "YouTube Strategy Launch",
     year: "2010",
-    presenter: teamMembers[2], // Moadh (corrected position)
+    presenter: teamMembers[0], // Changed from [2] to [0] - now Rayen
     platform: "YouTube",
     platformIcon: <Youtube className="h-6 w-6" />,
     content: (
@@ -90,7 +89,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Used video content to humanize the brand through engineer and developer features"
     ],
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // YouTube Marketing Strategy
     additionalImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=400&fit=crop"
@@ -101,12 +100,12 @@ export const presentationData: Record<string, PresentationContent> = {
       reach: "Expanded to global audience, particularly strong in Asia-Pacific",
       contentType: "Technical demonstrations, gaming benchmarks, developer interviews"
     },
-    fullBio: "Moadh Hannechi's research on NVIDIA's YouTube strategy explores how the company built one of technology's most successful video channels through careful content planning and production excellence. His analysis tracks the evolution from simple product demonstrations to sophisticated content series that built audience loyalty and established NVIDIA as a thought leader. Through interviews with NVIDIA's video production team and analysis of hundreds of videos, Moadh documents how the company used metrics and audience feedback to continuously refine its approach. His findings highlight NVIDIA's innovative use of YouTube not just for marketing but as a technical resource, creating sustained value that transcended product cycles and built long-term community engagement."
+    fullBio: "Mohamed Rayen Bouquery's research on NVIDIA's YouTube strategy explores how the company built one of technology's most successful video channels through careful content planning and production excellence. His analysis tracks the evolution from simple product demonstrations to sophisticated content series that built audience loyalty and established NVIDIA as a thought leader. Through interviews with NVIDIA's video production team and analysis of hundreds of videos, Mohamed documents how the company used metrics and audience feedback to continuously refine its approach. His findings highlight NVIDIA's innovative use of YouTube not just for marketing but as a technical resource, creating sustained value that transcended product cycles and built long-term community engagement."
   },
   "2014": {
     title: "Twitter Engagement Growth",
     year: "2014",
-    presenter: teamMembers[0], // Rayen (corrected position)
+    presenter: teamMembers[2], // Changed from [0] to [2] - now Moadh
     platform: "Twitter",
     platformIcon: <Twitter className="h-6 w-6" />,
     content: (
@@ -129,7 +128,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Implemented real-time monitoring and analytics for performance optimization"
     ],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Twitter for Business
     additionalImages: [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=400&fit=crop"
@@ -140,7 +139,7 @@ export const presentationData: Record<string, PresentationContent> = {
       reach: "Global audience with strong developer penetration",
       contentType: "Real-time updates, customer support, event coverage, technical announcements"
     },
-    fullBio: "Mohamed Rayen Bouquery's analysis of NVIDIA's Twitter strategy examines how the company transformed the platform from a basic announcement channel to a sophisticated engagement tool. Using advanced natural language processing on thousands of tweets and replies, Rayen quantifies how NVIDIA's conversation approach resulted in significantly higher engagement metrics than competitors. His research documents the company's innovative use of Twitter for customer support, breaking down response times and resolution rates across different types of queries. Rayen's work highlights how NVIDIA's rapid-response approach fundamentally changed customer expectations for technology companies on social media, establishing new industry benchmarks for transparency and authenticity."
+    fullBio: "Moadh Hannechi's analysis of NVIDIA's Twitter strategy examines how the company transformed the platform from a basic announcement channel to a sophisticated engagement tool. Using advanced natural language processing on thousands of tweets and replies, Moadh quantifies how NVIDIA's conversation approach resulted in significantly higher engagement metrics than competitors. His research documents the company's innovative use of Twitter for customer support, breaking down response times and resolution rates across different types of queries. Moadh's work highlights how NVIDIA's rapid-response approach fundamentally changed customer expectations for technology companies on social media, establishing new industry benchmarks for transparency and authenticity."
   },
   "2016": {
     title: "Instagram Visual Storytelling",
@@ -168,7 +167,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Implemented employee advocacy program to extend organic reach"
     ],
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/bhHrXcG8-Xo", // Instagram Marketing
     additionalImages: [
       "https://images.unsplash.com/photo-1527576539890-dfa815648363?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop"
@@ -206,8 +205,8 @@ export const presentationData: Record<string, PresentationContent> = {
       "Positioned executives as thought leaders through bylined articles and interviews",
       "Implemented lead generation strategy through gated content and webinar promotions"
     ],
-    image: "https://images.unsplash.com/photo-1621761225528-63d9e994ee4c?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // Replace with actual video URL
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop", // Updated with working image
+    videoUrl: "https://www.youtube.com/embed/k7MtMbIIFg4", // LinkedIn Business Strategy
     additionalImages: [
       "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=400&fit=crop"
@@ -246,7 +245,7 @@ export const presentationData: Record<string, PresentationContent> = {
       "Positioned CEO Jensen Huang as the face of AI innovation across all platforms"
     ],
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/3hk37hj5tjs", // Replace with actual video URL
+    videoUrl: "https://www.youtube.com/embed/3hk37hj5tjs", // Multi-Platform Social Media Strategy
     additionalImages: [
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop"
@@ -289,7 +288,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Stratégie de contenu axée sur le texte adaptée aux premières fonctionnalités de Facebook"
     ],
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/UkC_iT-RRKc", // Updated with working video
     additionalImages: [
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=400&fit=crop"
@@ -305,7 +304,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
   "2010": {
     title: "Lancement de la Stratégie YouTube",
     year: "2010",
-    presenter: teamMembers[2], // Moadh
+    presenter: teamMembers[0], // Changed from [2] to [0] - now Rayen
     platform: "YouTube",
     platformIcon: <Youtube className="h-6 w-6" />,
     content: (
@@ -328,7 +327,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Utilisation du contenu vidéo pour humaniser la marque à travers des présentations d'ingénieurs et développeurs"
     ],
     image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/lFUXwoWZ8jM", // Updated with working video
     additionalImages: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=400&fit=crop"
@@ -339,12 +338,12 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       reach: "Élargissement à une audience mondiale, particulièrement forte dans la région Asie-Pacifique",
       contentType: "Démonstrations techniques, benchmarks de jeux, interviews de développeurs"
     },
-    fullBio: "La recherche de Moadh Hannechi sur la stratégie YouTube de NVIDIA explore comment l'entreprise a construit l'une des chaînes vidéo les plus réussies de la technologie grâce à une planification soigneuse du contenu et à l'excellence de la production. Son analyse suit l'évolution des simples démonstrations de produits aux séries de contenu sophistiquées qui ont fidélisé l'audience et établi NVIDIA comme un leader d'opinion. À travers des interviews avec l'équipe de production vidéo de NVIDIA et l'analyse de centaines de vidéos, Moadh documente comment l'entreprise a utilisé les métriques et les retours d'audience pour affiner continuellement son approche. Ses résultats soulignent l'utilisation innovante de YouTube par NVIDIA non seulement pour le marketing mais comme une ressource technique, créant une valeur durable qui transcendait les cycles de produits et construisait un engagement communautaire à long terme."
+    fullBio: "La recherche de Mohamed Rayen Bouquery sur la stratégie YouTube de NVIDIA explore comment l'entreprise a construit l'une des chaînes vidéo les plus réussies de la technologie grâce à une planification soigneuse du contenu et à l'excellence de la production. Son analyse suit l'évolution des simples démonstrations de produits aux séries de contenu sophistiquées qui ont fidélisé l'audience et établi NVIDIA comme un leader d'opinion. À travers des interviews avec l'équipe de production vidéo de NVIDIA et l'analyse de centaines de vidéos, Mohamed documente comment l'entreprise a utilisé les métriques et les retours d'audience pour affiner continuellement son approche. Ses résultats soulignent l'utilisation innovante de YouTube par NVIDIA non seulement pour le marketing mais comme une ressource technique, créant une valeur durable qui transcendait les cycles de produits et construisait un engagement communautaire à long terme."
   },
   "2014": {
     title: "Croissance de l'Engagement sur Twitter",
     year: "2014",
-    presenter: teamMembers[0], // Rayen
+    presenter: teamMembers[2], // Changed from [0] to [2] - now Moadh
     platform: "Twitter",
     platformIcon: <Twitter className="h-6 w-6" />,
     content: (
@@ -367,7 +366,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       "Mise en œuvre de surveillance et d'analyses en temps réel pour l'optimisation des performances"
     ],
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop",
-    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Updated to meaningful video
+    videoUrl: "https://www.youtube.com/embed/gxuJnRWz7dQ", // Updated with working video
     additionalImages: [
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=400&fit=crop",
       "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=400&fit=crop"
@@ -378,7 +377,7 @@ export const presentationDataFr: Record<string, PresentationContent> = {
       reach: "Audience mondiale avec forte pénétration des développeurs",
       contentType: "Mises à jour en temps réel, support client, couverture d'événements, annonces techniques"
     },
-    fullBio: "L'analyse de Mohamed Rayen Bouquery sur la stratégie Twitter de NVIDIA examine comment l'entreprise a transformé la plateforme d'un simple canal d'annonce en un outil d'engagement sophistiqué. En utilisant le traitement avancé du langage naturel sur des milliers de tweets et de réponses, Rayen quantifie comment l'approche conversationnelle de NVIDIA a entraîné des métriques d'engagement significativement plus élevées que les concurrents. Sa recherche documente l'utilisation innovante de Twitter par l'entreprise pour le support client, en détaillant les temps de réponse et les taux de résolution pour différents types de demandes. Le travail de Rayen souligne comment l'approche de réponse rapide de NVIDIA a fondamentalement changé les attentes des clients envers les entreprises technologiques sur les médias sociaux, établissant de nouvelles références industrielles pour la transparence et l'authenticité."
+    fullBio: "L'analyse de Moadh Hannechi sur la stratégie Twitter de NVIDIA examine comment l'entreprise a transformé la plateforme d'un simple canal d'annonce en un outil d'engagement sophistiqué. En utilisant le traitement avancé du langage naturel sur des milliers de tweets et de réponses, Moadh quantifie comment l'approche conversationnelle de NVIDIA a entraîné des métriques d'engagement significativement plus élevées que les concurrents. Sa recherche documente l'utilisation innovante de Twitter par l'entreprise pour le support client, en détaillant les temps de réponse et les taux de résolution pour différents types de demandes. Le travail de Moadh souligne comment l'approche de réponse rapide de NVIDIA a fondamentalement changé les attentes des clients envers les entreprises technologiques sur les médias sociaux, établissant de nouvelles références industrielles pour la transparence et l'authenticité."
   },
   "2016": {
     title: "Narration Visuelle sur Instagram",
@@ -395,8 +394,4 @@ export const presentationDataFr: Record<string, PresentationContent> = {
           La stratégie de contenu Instagram de NVIDIA se concentrait sur quatre catégories clés: l'esthétique des produits, des aperçus en coulisses des processus d'ingénierie et de conception, du contenu généré par les utilisateurs présentant des configurations alimentées par NVIDIA, et des visualisations de données complexes et de concepts d'IA. Cette approche diversifiée a permis à NVIDIA de communiquer à la fois les aspects tangibles et conceptuels de sa technologie.
         </p>
         <p>
-          L'utilisation d'Instagram par NVIDIA pour humaniser la marque en présentant des histoires d'employés et des visites d'espaces de travail était particulièrement innovante. Notre analyse indique que ce contenu a généré un engagement significativement plus élevé que les posts centrés sur les produits, aidant à transformer les perceptions de NVIDIA d'un fabricant de matériel à une culture axée sur l'innovation.
-        </p>
-      </div>
-    ),
-    keyPoints: [
+          L'utilisation d'Instagram par NVIDIA pour humaniser la marque en présentant des histoires d'employés et des visites d'espaces de travail était particulièrement innovante. Notre analyse indique que ce contenu a généré un engagement significativement plus élevé que les posts centrés sur les produits, aidant à transformer les perceptions de NVIDIA d'un fabricant de matériel à une culture axée sur l'
