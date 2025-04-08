@@ -66,7 +66,7 @@ export const presentationData: Record<string, PresentationContent> = {
   "2010": {
     title: "YouTube Strategy Launch",
     year: "2010",
-    presenter: teamMembers[0], // Changed from [2] to [0] - now Rayen
+    presenter: teamMembers[0], // Rayen (corrected position)
     platform: "YouTube",
     platformIcon: <Youtube className="h-6 w-6" />,
     content: (
@@ -105,7 +105,7 @@ export const presentationData: Record<string, PresentationContent> = {
   "2014": {
     title: "Twitter Engagement Growth",
     year: "2014",
-    presenter: teamMembers[2], // Changed from [0] to [2] - now Moadh
+    presenter: teamMembers[2], // Moadh (corrected position)
     platform: "Twitter",
     platformIcon: <Twitter className="h-6 w-6" />,
     content: (
@@ -394,4 +394,6 @@ export const presentationDataFr: Record<string, PresentationContent> = {
           La stratégie de contenu Instagram de NVIDIA se concentrait sur quatre catégories clés: l'esthétique des produits, des aperçus en coulisses des processus d'ingénierie et de conception, du contenu généré par les utilisateurs présentant des configurations alimentées par NVIDIA, et des visualisations de données complexes et de concepts d'IA. Cette approche diversifiée a permis à NVIDIA de communiquer à la fois les aspects tangibles et conceptuels de sa technologie.
         </p>
         <p>
-          L'utilisation d'Instagram par NVIDIA pour humaniser la marque en présentant des histoires d'employés et des visites d'espaces de travail était particulièrement innovante. Notre analyse indique que ce contenu a généré un engagement significativement plus élevé que les posts centrés sur les produits, aidant à transformer les perceptions de NVIDIA d'un fabricant de matériel à une culture axée sur l'
+          L'utilisation d'Instagram par NVIDIA pour humaniser la marque en présentant des histoires d'employés et des visites d'espaces de travail était particulièrement innovante. Notre analyse indique que ce contenu a généré un engagement significativement plus élevé que les posts centrés sur les produits, aidant à transformer les perceptions de NVIDIA d'un fabricant de matériel à une culture axée sur l'innovation.
+        </p>
+      </div>
