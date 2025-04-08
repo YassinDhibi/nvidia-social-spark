@@ -397,3 +397,4 @@ export const presentationDataFr: Record<string, PresentationContent> = {
           L'utilisation d'Instagram par NVIDIA pour humaniser la marque en présentant des histoires d'employés et des visites d'espaces de travail était particulièrement innovante. Notre analyse indique que ce contenu a généré un engagement significativement plus élevé que les posts centrés sur les produits, aidant à transformer les perceptions de NVIDIA d'un fabricant de matériel à une culture axée sur l'innovation.
         </p>
       </div>
+    ),
