@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Mail, UserCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
@@ -10,7 +9,7 @@ export const teamMembers = [
     name: "Mohamed Rayen Bouquery",
     role: "Team Member",
     bio: "Focused on data analysis and research methodology",
-    image: "/lovable-uploads/4693be6f-ada7-44b2-843f-dd52d6fe1652.png",
+    image: "/lovable-uploads/744bd08b-fb9e-40ad-82f4-1fd129de90b5.png",
     detailedBio: `Mohamed Rayen Bouquery brings a strong background in quantitative research and data science to our team. With a Ph.D. in Computational Social Science from MIT, Mohamed specializes in developing rigorous methodologies for analyzing social media effectiveness and impact across multiple dimensions.
 
     For the NVIDIA social media study, Mohamed has designed the core research framework, ensuring that our analysis maintains scientific validity while extracting meaningful insights from complex, multi-platform data. His expertise in statistical modeling has been instrumental in identifying significant patterns in NVIDIA's strategy evolution over time.
@@ -142,7 +141,7 @@ export const teamMembers = [
     
     Yassin's examination of how NVIDIA has positioned its executives as thought leaders across social platforms offers an important perspective on personal branding as an extension of corporate communication strategy. His analysis of CEO Jensen Huang's evolving presence on LinkedIn and Twitter demonstrates how executive communication can amplify company messaging and build market credibility, particularly when navigating strategic pivots like NVIDIA's shift toward AI leadership.
     
-    Through comparative analysis of NVIDIA's crisis communication during challenging periods—such as cryptocurrency mining controversies and product shortages—Yassin has developed a framework for evaluating the effectiveness of different response strategies across social platforms. This work provides valuable guidelines for technology companies facing similar communication challenges in rapidly evolving markets.`,
+    Through comparative analysis of NVIDIA's crisis communication during challenging periods���such as cryptocurrency mining controversies and product shortages—Yassin has developed a framework for evaluating the effectiveness of different response strategies across social platforms. This work provides valuable guidelines for technology companies facing similar communication challenges in rapidly evolving markets.`,
     education: "Master's in Strategic Communications - Columbia University",
     expertise: [
       "Brand Positioning",
